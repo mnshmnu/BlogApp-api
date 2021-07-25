@@ -1,0 +1,12 @@
+# GET http://localhost:5000/
+
+
+POST http://localhost:5000/createuser
+content-type: application/json
+
+{
+    "name":"Shilpa",
+    "email":"shilpas@mail.com",
+    "mobile":"12122112",
+    "password":"abcdefgh"
+}
