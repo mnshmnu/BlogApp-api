@@ -1,12 +1,26 @@
-# GET http://localhost:5000/
+GET http://localhost:5000/
 
-
-POST http://localhost:5000/createuser
+###
+POST http://localhost:5000/users/add
 content-type: application/json
 
 {
-    "name":"Shilpa",
-    "email":"shilpas@mail.com",
+    "name":"Sreerag",
+    "email":"srn@mail.com",
     "mobile":"12122112",
-    "password":"abcdefgh"
+    "password":"abcd"
 }
+
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email":"srn@mail.com",
+    "password":"abcd"
+}
+###
+
+GET http://localhost:5000/blogs

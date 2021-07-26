@@ -6,12 +6,13 @@ function hashPassword(password: string): String{
     return passwordHash
 }
 
+function comparePassword(password: string, hash: string): boolean{
+    let isSame:boolean = bcrypt.compareSync(password, hash);
+    return isSame
+}
 
-// const passwordhash = (password) => {
-//     const passwordHash = bcrypt.hashSync(password, 10);
-//     return passwordHash
-// }
 
 module.exports = {
     hashPassword,
+    comparePassword
 }
